@@ -1,5 +1,0 @@
-D:/HUST/Computer_Network_Experiment/TFTP_client1/build/CMakeFiles/TFTP_Client.dir
-D:/HUST/Computer_Network_Experiment/TFTP_client1/build/CMakeFiles/edit_cache.dir
-D:/HUST/Computer_Network_Experiment/TFTP_client1/build/CMakeFiles/rebuild_cache.dir
-D:/HUST/Computer_Network_Experiment/TFTP_client1/build/CMakeFiles/TFTP_Client_autogen_timestamp_deps.dir
-D:/HUST/Computer_Network_Experiment/TFTP_client1/build/CMakeFiles/TFTP_Client_autogen.dir
