@@ -11,7 +11,8 @@ set(CMAKE_AUTOUIC ON)
 # execution-charset: UTF-8
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /utf-8")
 # add path to qt
-set(CMAKE_PREFIX_PATH "${Qt5_Dir}")
+set(CMAKE_PREFIX_PATH "${Qt5_DIR}")
+message("CMAKE_PREFIX_PATH ${CMAKE_PREFIX_PATH}")
 
 find_package(Qt5 COMPONENTS Core Gui Widgets Concurrent REQUIRED)
 
@@ -43,7 +44,7 @@ if (WIN32)
         set(DEBUG_SUFFIX "d")
     endif ()
 
-    set(QT_INSTALL_PATH "${CMAKE_PREFIX_PATH}")
+    set(QT_INSTALL_PATH "${Qt5_DIR}")
     message("QT_INSTALL_PATH ${QT_INSTALL_PATH}")
     if (NOT EXISTS "${QT_INSTALL_PATH}/bin")
         set(QT_INSTALL_PATH "${QT_INSTALL_PATH}/..")
