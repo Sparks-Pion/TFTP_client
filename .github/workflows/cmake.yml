@@ -1,4 +1,4 @@
-name: CMake
+name: Qt CMake build
 
 on:
   push:
@@ -20,9 +20,6 @@ jobs:
       uses: jurplel/install-qt-action@v3
       with:
         version: '5.15.2'
-        host: 'windows'
-        target: 'desktop'
-        arch: 'win64_msvc2019_64'
 
     - name: Configure CMake
       run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
