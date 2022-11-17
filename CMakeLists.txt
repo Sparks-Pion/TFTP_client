@@ -44,12 +44,14 @@ if (WIN32)
     endif ()
 
     set(QT_INSTALL_PATH "${CMAKE_PREFIX_PATH}")
+    message("QT_INSTALL_PATH ${QT_INSTALL_PATH}")
     if (NOT EXISTS "${QT_INSTALL_PATH}/bin")
         set(QT_INSTALL_PATH "${QT_INSTALL_PATH}/..")
         if (NOT EXISTS "${QT_INSTALL_PATH}/bin")
             set(QT_INSTALL_PATH "${QT_INSTALL_PATH}/..")
         endif ()
     endif ()
+    message("QT_INSTALL_PATH ${QT_INSTALL_PATH}")
 
     if (EXISTS "${QT_INSTALL_PATH}/plugins/platforms/qwindows${DEBUG_SUFFIX}.dll")
         add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
