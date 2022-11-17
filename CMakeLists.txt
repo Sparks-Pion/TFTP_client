@@ -11,7 +11,7 @@ set(CMAKE_AUTOUIC ON)
 # execution-charset: UTF-8
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /utf-8")
 # add path to qt
-set(CMAKE_PREFIX_PATH "C:/Qt/5.15.2/msvc2019_64")
+set(CMAKE_PREFIX_PATH "${Qt5_DIR}")
 
 find_package(Qt5 COMPONENTS Core Gui Widgets Concurrent REQUIRED)
 
