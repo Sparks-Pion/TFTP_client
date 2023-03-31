@@ -1,0 +1,18 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: flawfinder_scan
+      uses: david-a-wheeler/flawfinder@2.0.19-alpha1
+      with:
+        arguments: '−−html ./'
+        output: 'flawfinder_results.html'
+
